@@ -28,10 +28,17 @@ const Contact = () => {
     },
     {
       name: "Luis T. Coronel",
-      role: "Mentor del proyecto",
+      role: "Mentor",
       jobTitle: "Cloud Solutions Architect in Microsoft",
       linkedin: "https://www.linkedin.com/in/luis-t-coronel/",
       image: "/Luis_TC.jpeg"
+    },
+    {
+      name: "Silvia Montoya S.",
+      role: "Asesor del proyecto",
+      jobTitle: "MBA e Ingeniera de Sistemas",
+      linkedin: "https://www.linkedin.com/in/silviammontoyas/",
+      image: "/SILVIA_MONTOYA S.jpeg"
     }
   ];
 
@@ -59,7 +66,13 @@ const Contact = () => {
               whileHover={{ y: -10, boxShadow: "0px 10px 20px rgba(142, 36, 170, 0.2)" }}
             >
               <div className="member-avatar">
-                <img src={member.image} alt={member.name} />
+                {member.image && !member.useInitials ? (
+                  <img src={member.image} alt={member.name} />
+                ) : (
+                  <div className="avatar-initials">
+                    {member.name.split(' ').slice(0, 2).map(name => name[0]).join('')}
+                  </div>
+                )}
               </div>
               <h3>{member.name}</h3>
               <p className="member-role">{member.role}</p>
