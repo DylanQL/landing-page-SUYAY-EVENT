@@ -18,13 +18,13 @@ const CTA = () => {
           </p>
           
           <div className="cta-buttons">
-            <button className="cta-primary-button pulse">
+            <a href="https://fork-suyay-events-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="cta-primary-button pulse">
               Explorar eventos
-            </button>
+            </a>
             
-            <button className="cta-secondary-button">
+            <a href="https://fork-suyay-events-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="cta-secondary-button">
               Crear evento
-            </button>
+            </a>
           </div>
           
           <p className="cta-stats">

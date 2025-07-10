@@ -71,9 +71,9 @@ const HowItWorks = () => {
         </div>
 
         <div className="cta-container">
-          <button className="how-button">
+          <a href="https://fork-suyay-events-frontend.vercel.app/" target="_blank" rel="noopener noreferrer" className="how-button">
             Comenzar ahora
-          </button>
+          </a>
         </div>
       </div>
     </section>

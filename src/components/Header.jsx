@@ -62,7 +62,9 @@ const Header = () => {
             </nav>
 
             <motion.a
-              href="#publicar"
+              href="https://fork-suyay-events-frontend.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="cta-button"
               whileHover={{ scale: 1.05, boxShadow: "0px 5px 15px rgba(255, 29, 142, 0.4)" }}
               whileTap={{ scale: 0.95 }}
@@ -116,7 +118,9 @@ const Header = () => {
             </div>
 
             <motion.a
-              href="#publicar"
+              href="https://fork-suyay-events-frontend.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="mobile-cta-button"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}

@@ -17,7 +17,7 @@ const Footer = () => {
       links: [
         { name: 'Cómo funciona', href: '#' },
         { name: 'Preguntas frecuentes', href: '#' },
-        { name: 'Crear un evento', href: '#' },
+        { name: 'Crear un evento', href: 'https://fork-suyay-events-frontend.vercel.app/' },
         { name: 'Vender entradas', href: '#' },
       ],
     },
