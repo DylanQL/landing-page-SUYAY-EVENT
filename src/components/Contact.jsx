@@ -12,21 +12,24 @@ const Contact = () => {
   const teamMembers = [
     {
       name: "Angelo Dylan QL",
-      role: "Desarrollador",
+      role: "Desarrollador del proyecto",
+      jobTitle: "Fullstack Developer",
       email: "angelo.quispe.l@tecsup.edu.pe",
       linkedin: "https://www.linkedin.com/in/angelo-dylan-ql/",
       image: "/Angelo_Dylan_QL.jpeg"
     },
     {
       name: "Jeremias George CR",
-      role: "Desarrollador",
+      role: "Desarrollador del proyecto",
+      jobTitle: "Fullstack Developer",
       email: "jeremias.coronel@tecsup.edu.pe",
       linkedin: "http://www.linkedin.com/in/jeremias-g-coronel",
       image: "/Jeremias_George_CR.jpeg"
     },
     {
       name: "Luis T. Coronel",
-      role: "Desarrollador",
+      role: "Mentor del proyecto",
+      jobTitle: "Cloud Solutions Architect in Microsoft",
       linkedin: "https://www.linkedin.com/in/luis-t-coronel/",
       image: "/Luis_TC.jpeg"
     }
@@ -41,8 +44,8 @@ const Contact = () => {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.7 }}
         >
-          <h2>Equipo de Desarrollo</h2>
-          <p>Conoce a los creadores detrás de Suyay Events</p>
+          <h2>Nuestro Equipo</h2>
+          <p>Conoce a los profesionales detrás de Suyay Events</p>
         </motion.div>
 
         <div className="team-members">
@@ -60,6 +63,7 @@ const Contact = () => {
               </div>
               <h3>{member.name}</h3>
               <p className="member-role">{member.role}</p>
+              <p className="member-job-title">{member.jobTitle}</p>
               
               <div className="member-contact">
                 {member.email && (
