@@ -38,13 +38,7 @@ const Hero = () => {
     },
   ];
 
-  const searchCategories = [
-    { id: 'all', label: 'TODOS' },
-    { id: 'concerts', label: 'CONCIERTOS' },
-    { id: 'festivals', label: 'FESTIVALES' },
-    { id: 'theater', label: 'TEATRO' },
-    { id: 'conferences', label: 'CONFERENCIAS' },
-  ];
+  // Search categories removed
 
   return (
     <section className="hero-section">
@@ -100,60 +94,7 @@ const Hero = () => {
           />
         </div>
 
-        {/* Search box */}
-        <div className="search-box">
-          {/* Filtros de categorías */}
-          <div className="category-buttons">
-            {searchCategories.map((category) => (
-              <button
-                key={category.id}
-                className={`category-button ${category.id === 'all' ? 'active' : ''}`}
-              >
-                {category.label}
-              </button>
-            ))}
-          </div>
-          
-          {/* Formulario de búsqueda */}
-          <div className="search-form">
-            <div className="search-input-container">
-              <input
-                type="text"
-                placeholder="¿Qué estás buscando?"
-                className="search-input"
-              />
-              <span className="search-input-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </span>
-            </div>
-            
-            <div className="form-group location">
-              <input
-                type="text"
-                placeholder="Ubicación"
-                className="location-input"
-              />
-            </div>
-            
-            <div className="form-group date">
-              <input
-                type="date"
-                className="date-input"
-              />
-            </div>
-            
-            <div className="search-button-container">
-              <button className="search-button">
-                Buscar
-                <svg xmlns="http://www.w3.org/2000/svg" className="search-icon" viewBox="0 0 20 20" fill="currentColor">
-                  <path fillRule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clipRule="evenodd" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
+        {/* Search box has been removed */}
       </div>
       
       {/* Indicador de scroll - sin depender de Framer Motion */}
