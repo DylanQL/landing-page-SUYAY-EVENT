@@ -29,9 +29,23 @@
 .contact-section .section-header h2 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   color: #8E24AA;
   margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.contact-section .section-header h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #FF1D8E, #8E24AA);
+  border-radius: 2px;
 }
 
 .contact-section .section-header p {
@@ -47,41 +61,45 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .member-card {
   background-color: #fff;
   border-radius: 15px;
-  padding: 30px;
+  padding: 40px;
   width: 100%;
-  max-width: 340px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  max-width: 380px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 29, 142, 0.1);
 }
 
 .member-avatar {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   background: linear-gradient(135deg, #FF1D8E, #8E24AA);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 700;
   color: white;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(142, 36, 170, 0.3);
+  border: 3px solid #fff;
 }
 
 .member-card h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 1.3rem;
-  margin-bottom: 5px;
+  font-size: 1.5rem;
+  margin-bottom: 8px;
   color: #333333;
 }
 

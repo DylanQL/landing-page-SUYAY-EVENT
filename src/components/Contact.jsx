@@ -33,8 +33,8 @@ const Contact = () => {
           animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
           transition={{ duration: 0.7 }}
         >
-          <h2>Contáctanos</h2>
-          <p>¿Tienes alguna pregunta? Nuestro equipo está listo para ayudarte</p>
+          <h2>Equipo de Desarrollo</h2>
+          <p>Conoce a los creadores detrás de Suyay Events</p>
         </motion.div>
 
         <div className="team-members">
@@ -70,37 +70,6 @@ const Contact = () => {
             </motion.div>
           ))}
         </div>
-
-        <motion.div 
-          className="contact-form-wrapper"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
-          transition={{ duration: 0.7, delay: 0.4 }}
-        >
-          <div className="contact-info">
-            <h3>¿Cómo podemos ayudarte?</h3>
-            <p>Envíanos un mensaje y nos pondremos en contacto contigo pronto.</p>
-          </div>
-          <form className="contact-form">
-            <div className="form-group">
-              <input type="text" placeholder="Nombre" required />
-            </div>
-            <div className="form-group">
-              <input type="email" placeholder="Email" required />
-            </div>
-            <div className="form-group">
-              <textarea placeholder="Mensaje" rows="4" required></textarea>
-            </div>
-            <motion.button 
-              type="submit" 
-              className="submit-button"
-              whileHover={{ scale: 1.05, boxShadow: "0px 5px 15px rgba(255, 29, 142, 0.4)" }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Enviar mensaje
-            </motion.button>
-          </form>
-        </motion.div>
       </div>
     </section>
   );
