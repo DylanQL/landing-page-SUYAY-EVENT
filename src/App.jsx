@@ -11,6 +11,7 @@ import Events from './components/Events';
 import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+import ChatBot from './components/ChatBot';
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
       <Testimonials />
       <CTA />
       <Footer />
+      <ChatBot />
     </div>
   );
 }
