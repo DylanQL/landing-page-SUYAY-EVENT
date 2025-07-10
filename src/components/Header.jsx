@@ -26,7 +26,7 @@ const Header = () => {
     setMobileMenuOpen(!mobileMenuOpen);
   };
 
-  const menuItems = ['Inicio', 'Eventos', 'Categorías', 'Nosotros', 'Contacto'];
+  const menuItems = ['Inicio', 'Eventos', 'Características', 'Nosotros', 'Contacto'];
 
   return (
     <>
