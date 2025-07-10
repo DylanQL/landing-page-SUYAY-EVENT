@@ -41,7 +41,7 @@ const Hero = () => {
   // Search categories removed
 
   return (
-    <section className="hero-section">
+    <section id="inicio" className="hero-section">
       {/* Slider de fondo */}
       <div className="hero-slider-container" style={{position: 'absolute', width: '100%', height: '100%', zIndex: 0}}>
         <Slider {...settings} className="hero-slider">
