@@ -54,6 +54,27 @@ const ChatBot = () => {
     setIsTyping(true);
     
     try {
+      // Create a content array for the chat history
+      // Start with the personality prompt
+      const contents = [{
+        role: "user",
+        parts: [{ text: CHATBOT_PERSONALITY }]
+      }];
+      
+      // Add all previous messages to maintain conversation context
+      messages.forEach((msg) => {
+        contents.push({
+          role: msg.type === 'user' ? "user" : "model",
+          parts: [{ text: msg.content }]
+        });
+      });
+      
+      // Add current user message
+      contents.push({
+        role: "user",
+        parts: [{ text: input }]
+      });
+      
       const response = await fetch(
         'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent',
         {
@@ -63,14 +84,7 @@ const ChatBot = () => {
             'X-goog-api-key': 'AIzaSyAYOKE3rrszIOjBMd8AsrD3FGMi2I3f5j4'
           },
           body: JSON.stringify({
-            contents: [
-              {
-                parts: [
-                  { text: CHATBOT_PERSONALITY },
-                  { text: input }
-                ]
-              }
-            ]
+            contents
           })
         }
       );
