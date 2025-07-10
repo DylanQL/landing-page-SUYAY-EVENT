@@ -1,0 +1,110 @@
+/* AboutUs.css */
+
+.about-section {
+  padding: 5rem 0;
+  background-color: #FFFFFF;
+}
+
+.about-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about-tag {
+  color: #FF1D8E;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 0.875rem;
+}
+
+.about-title {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .about-title {
+    font-size: 3rem;
+  }
+}
+
+.about-description {
+  max-width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.125rem;
+  color: #666666;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+@media (min-width: 768px) {
+  .features-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.feature-card {
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.feature-icon-container {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 9999px;
+  background-color: rgba(255, 29, 142, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+.feature-icon {
+  height: 3rem;
+  width: 3rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 1rem;
+}
+
+.feature-description {
+  color: #666666;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.about-cta {
+  margin-top: 4rem;
+  text-align: center;
+}

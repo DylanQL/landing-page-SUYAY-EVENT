@@ -1,0 +1,46 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        'primary': '#FF1D8E',
+        'secondary': '#8E24AA',
+        'light-pink': '#FF77B1',
+        'dark-text': '#333333',
+      },
+      fontFamily: {
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'opensans': ['Open Sans', 'sans-serif'],
+        'roboto': ['Roboto', 'sans-serif'],
+      },
+      backgroundColor: {
+        'primary': '#FF1D8E',
+        'primary-light': 'rgba(255, 29, 142, 0.1)',
+      },
+      textColor: {
+        'primary': '#FF1D8E',
+        'secondary': '#8E24AA',
+      },
+      borderColor: {
+        'primary': '#FF1D8E',
+      }
+    },
+  },
+  plugins: [],
+  safelist: [
+    'bg-primary',
+    'text-primary',
+    'border-primary',
+    'bg-secondary',
+    'text-secondary',
+    'bg-white',
+    'text-white',
+    'font-montserrat',
+    'font-opensans',
+    'font-roboto',
+  ]
+}

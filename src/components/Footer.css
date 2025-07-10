@@ -1,0 +1,152 @@
+.footer {
+  background-color: #1F2937;
+  color: white;
+  padding-top: 64px;
+  padding-bottom: 32px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-grid {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
+
+.footer-brand {
+  margin-bottom: 24px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.logo-image {
+  height: 40px;
+  margin-right: 12px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(90deg, #FF1D8E 0%, #8E24AA 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer-description {
+  color: #9CA3AF;
+  margin-bottom: 24px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  color: #9CA3AF;
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #FF1D8E;
+  transform: scale(1.2);
+}
+
+.footer-links-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+
+.footer-links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-link-item {
+  margin-bottom: 12px;
+}
+
+.footer-link {
+  color: #9CA3AF;
+  font-size: 0.875rem;
+  transition: color 0.3s, transform 0.3s;
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-link:hover {
+  color: #FF1D8E;
+  transform: translateX(5px);
+}
+
+.footer-bottom {
+  margin-top: 64px;
+  padding-top: 32px;
+  border-top: 1px solid #374151;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.copyright {
+  color: #6B7280;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .copyright {
+    margin-bottom: 0;
+  }
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-bottom-link {
+  color: #6B7280;
+  font-size: 0.875rem;
+  transition: color 0.3s;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.footer-bottom-link:hover {
+  color: #D1D5DB;
+}

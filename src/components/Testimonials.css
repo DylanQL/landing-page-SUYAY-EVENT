@@ -1,0 +1,148 @@
+.testimonials-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.testimonials-tag {
+  color: #FF1D8E;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 10px 0 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 768px) {
+  .testimonials-title {
+    font-size: 2.5rem;
+  }
+}
+
+.testimonials-description {
+  max-width: 900px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  color: #666;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.slider-container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Override react-slick styles */
+.testimonials-section .slick-slide {
+  padding: 15px;
+}
+
+.testimonials-section .slick-dots {
+  bottom: -40px;
+}
+
+.testimonials-section .slick-dots li button:before {
+  font-size: 10px;
+  color: #FF1D8E;
+}
+
+.testimonials-section .slick-dots li.slick-active button:before {
+  color: #FF1D8E;
+  opacity: 1;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.testimonial-image-container {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #FF1D8E;
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-person {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-name {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.testimonial-role {
+  color: #666;
+  font-size: 0.875rem;
+}
+
+.testimonial-stars {
+  display: flex;
+  margin-top: 4px;
+}
+
+.star {
+  width: 16px;
+  height: 16px;
+  color: #FFD700;
+}
+
+.star-empty {
+  color: #E5E7EB;
+}
+
+.quote-icon {
+  width: 32px;
+  height: 32px;
+  color: #FF1D8E;
+  opacity: 0.2;
+  margin-bottom: 8px;
+}
+
+.testimonial-quote {
+  color: #666;
+  font-style: italic;
+  font-family: 'Open Sans', sans-serif;
+}
