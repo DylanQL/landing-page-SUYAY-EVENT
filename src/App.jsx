@@ -10,6 +10,7 @@ import HowItWorks from './components/HowItWorks';
 import Events from './components/Events';
 import Testimonials from './components/Testimonials';
 import CTA from './components/CTA';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ChatBot from './components/ChatBot';
 
@@ -34,6 +35,7 @@ function App() {
       <Events />
       <Testimonials />
       <CTA />
+      <Contact />
       <Footer />
       <ChatBot />
     </div>
